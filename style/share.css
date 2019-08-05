@@ -1,0 +1,91 @@
+
+/*===================================================================================
+	layout
+====================================================================================*/
+
+div#share p {
+	display: none;
+}
+
+div#share ul.navigation {
+	overflow: hidden;
+}
+
+div#share ul.navigation li {
+	float: left;
+}
+
+div#share ul.navigation a {
+	display:       block;
+	width:         28px;
+	height:        28px;
+	margin-right:  5px;
+	border-radius: 4px;
+	overflow:      hidden;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+div#share ul.navigation a {
+	background-repeat:   no-repeat;
+	background-position: center bottom;
+}
+
+div#share ul.navigation a[ title= "facebook" ] {
+	background-image: url( "../images/share/facebook.png" );
+}
+
+div#share ul.navigation a[ title= "twitter" ] {
+	background-image: url( "../images/share/twitter.png" );
+}
+
+div#share ul.navigation a[ title= "linkedin" ] {
+	background-image: url( "../images/share/linkedin.png" );
+}
+
+div#share ul.navigation a[ title= "myspace" ] {
+	background-image: url( "../images/share/myspace.png" );
+}
+
+div#share ul.navigation a[ title= "youtube" ] {
+	background-image: url( "../images/share/youtube.png" );
+}
+
+div#share ul.navigation a[ title= "technorati" ] {
+	background-image: url( "../images/share/technorati.png" );
+}
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+div#share ul.navigation a:hover {
+	background-position: center top;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

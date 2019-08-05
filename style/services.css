@@ -1,0 +1,177 @@
+
+@import url( "reset.css" );
+@import url( "general.css" );
+@import url( "font.css" );
+
+@import url( "identity.css" );
+@import url( "main-navigation.css" );
+@import url( "search-box.css" );
+@import url( "banner.css" );
+@import url( "secondary-navigation.css" );
+@import url( "share.css" );
+@import url( "copyright.css" );
+
+
+/*===================================================================================
+   layout
+====================================================================================*/
+
+/*
+ * global
+ */
+ 
+div#featured-services h3, div#featured-services h3+p, div#featured-services ul,
+div#services-overview h3, div#services-overview ul  {
+	width:        1000px;
+	margin-left:  auto;
+	margin-right: auto;
+}
+
+/*
+ * div#featured-services
+ */
+ 
+div#featured-services {
+	margin-bottom: 70px;
+}
+
+div#featured-services h3+p {
+	margin-bottom: 22px;
+}
+
+div#featured-services ul {
+	overflow: hidden;
+}
+
+div#featured-services li.entry {
+	width:       333px;
+	padding-top: 8px;
+	float:       left;
+}
+
+div#featured-services li.entry h4, div#featured-services li.entry p {
+	margin-left:  56px;
+	margin-right: 32px;
+}
+
+div#featured-services li.entry h4 {
+	margin-bottom: 20px;
+}
+
+div#featured-services li.entry img {
+	width:  34px;
+	height: 34px;
+	display: none;
+}
+
+div#featured-services li.entry a.more {
+	margin-top: 20px;
+}
+
+/* Стилизираните "булети" пред всеки от блоковете в секцията
+ */
+div#featured-services li.entry:nth-child( 1 ):before {
+	content: "1";
+}
+
+div#featured-services li.entry:nth-child( 2 ):before {
+	content: "2";
+}
+
+div#featured-services li.entry:nth-child( 3 ):before {
+	content: "3";
+}
+
+div#featured-services li.entry:before {
+	width:         40px;
+	height:        35px;	
+	position:      absolute;
+	left:          0;
+	top:           0;
+	border-radius: 4px 0 0 4px;
+}
+
+div#featured-services li.entry p:before {
+	content: none;
+}
+
+/*
+ * div#services-overview
+ */
+
+div#services-overview li.entry {
+	margin-bottom: 32px;
+}
+
+div#services-overview li.entry h4, div#services-overview li.entry p {
+	margin-left: 238px;
+}
+
+div#services-overview li.entry h4 {
+	margin-bottom: 20px;
+}
+
+/* Размери на картинките и рамката върху тях в блоковете
+ */
+div#services-overview li.entry p img, div#services-overview li.entry p:before {
+	width:  220px;
+	height: 124px;
+}
+
+div#services-overview li.entry a.more {
+	margin-top: 16px;
+}
+
+/* Ширина на рамката
+ */
+div#services-overview li.entry p:before {
+	border-width: 6px;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/* Текстовото оформяне на булетите
+ */
+div#featured-services li.entry:before {
+	font:       22px / 35px Impact;
+	text-align: center;
+}
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+/* Цветовото оформяне на булетите
+ */
+div#featured-services li.entry:before {
+	color:            #222;
+	background-color: #444;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

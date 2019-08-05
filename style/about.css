@@ -1,0 +1,246 @@
+
+@import url( "reset.css" );
+@import url( "general.css" );
+@import url( "font.css" );
+
+@import url( "identity.css" );
+@import url( "main-navigation.css" );
+@import url( "search-box.css" );
+@import url( "banner.css" );
+@import url( "secondary-navigation.css" );
+@import url( "share.css" );
+@import url( "copyright.css" );
+
+
+/*===================================================================================
+   layout
+====================================================================================*/
+
+/*
+ * section positioning
+ */
+ 
+ div#about-company,
+ div#testimonials {
+	width:        620px;
+	position:     relative;
+	left:         50%;
+	margin-left: -500px;
+}
+
+div#work-team {
+	position:      absolute;
+	top:           80px;
+	right:         50%;
+	margin-right: -500px;
+}
+
+/*
+ * div#about-company
+ */
+
+ 
+div#about-company {
+	height:        261px;
+	margin-bottom: 70px;
+}
+
+div#about-company h5, div#about-company p {
+	margin-left:  318px;
+	margin-right: 50px;
+}
+
+div#about-company h5 {
+	margin-bottom: 15px;
+}
+
+div#about-company.entry p img, div#content div#about-company p:before {
+	width:  300px;
+	height: 200px;
+	top:    61px;
+}
+
+/* Добавяне на div#content към селектора осигурява по-висока специфичност
+ * от базовата
+ */
+div#content div#about-company p:before {
+	border-width: 10px;
+}
+
+div#about-company.entry a.more {
+	margin-top: 15px;
+}
+
+/*
+ * div#work-team
+ */
+
+div#work-team {
+	width: 380px;
+}
+
+div#work-team li.entry {
+	height:        151px;
+	margin-bottom: 30px;
+}
+
+div#work-team li.entry h4, div#work-team li.entry h5, div#work-team li.entry p {
+	margin-left: 164px;
+}
+
+div#work-team li.entry h4 {
+	margin-bottom: 6px;
+}
+
+div#work-team li.entry h5 {
+	margin-bottom: 22px;
+}
+
+div#work-team li.entry p img, div#work-team p:before {
+	width:  140px;
+	height: 151px;
+}
+
+div#content div#work-team p:before {
+	border: 8px solid rgba( 255, 255, 255, 0.6 );
+}
+
+ div#work-team li.entry a.more {
+	margin-top: 22px;
+ }
+
+/*
+ * div#testimonials
+ */
+
+div#testimonials ul {
+	margin-right: 10px;
+	overflow:     hidden;
+}
+
+div#testimonials li.entry {
+	width:          50%;
+	padding-bottom: 52px;
+	margin-bottom:  45px;
+	float:          left;
+}
+
+div#testimonials li.entry:nth-child( 3 ) {
+	margin-bottom: 0;
+}
+
+div#testimonials li.entry > * {
+	margin-right: 40px;
+}
+
+div#testimonials li.entry h4, div#testimonials li.entry h5 {
+	position: absolute;
+	right:    76px;
+}
+
+div#testimonials li.entry h4 {
+	bottom:        10px;
+	margin-bottom: 6px;
+}
+
+div#testimonials li.entry h5 {
+	bottom: 2px;
+}
+
+div#testimonials li.entry p {
+	padding:       16px;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	position:      relative;
+}
+
+div#testimonials li.entry p:after {
+	content:       "";
+	display:       block;
+	width:         0;
+	height:        0;
+	position:      absolute;
+	left:          140px;
+	top:           100%;
+	border-right:  20px solid;
+	border-bottom: 20px solid;
+}
+
+/* Позициониране с right и bottom след приложено left и top (генерално)
+   не работи, дори и когато има по-голяма специфичност */
+div#testimonials li.entry p img, div#content div#testimonials p:before {
+	width:        52px;
+	height:       52px;
+	left:         100%;
+	margin-left: -68px;
+	top:          100%;
+	margin-top:   15px;
+}
+
+div#content div#testimonials p:before {
+	border-width: 3px;
+	border-color: rgba( 255, 255, 255, 0.6 );
+}
+
+div#testimonials li.entry p a.more {
+	display: none;
+}
+
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+div#about-company h5 {
+	font:           inherit;
+	text-transform: none;
+}
+
+div#testimonials li.entry p {
+	text-align: right;
+}
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+div#about-company h5 {
+	color: #444;
+}
+
+div#testimonials li.entry p {
+	background-color: #1D1D1D;
+}
+
+div#testimonials li.entry p:after {
+	border-right-color:  #1D1D1D;
+	border-bottom-color: #181818;
+	border-bottom-color:  transparent;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

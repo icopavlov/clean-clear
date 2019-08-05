@@ -1,0 +1,77 @@
+
+/*
+
+section: s,
+block: b
+
+*/
+
+s {
+/*При хоризонтална секция*/
+	width:    0px;
+	overflow: hidden;
+}
+
+b {
+/*При хоризонтална секция*/
+//	width:         0px;
+//	float:         left;
+	position:      relative;
+	padding:       0 0 aHpx 0;
+/*При вертикална секция*/
+//	margin-bottom: 0px;
+}
+
+b hX, b h5 , b p {
+	margin-left:  0;
+	margin-right: 0;
+}
+
+b hX {
+	margin-bottom: 0;
+}
+
+b h5 {
+	margin-bottom: 0;
+}
+
+b p {
+	height:        37px;
+	margin-top:    0;
+	margin-bottom: 0;
+	overflow:      hidden;
+}
+
+b p img {
+	width:    iWpx;
+	height:   iHpx;
+	
+	position: absolute;
+	left:     0;
+	top:      0;
+
+//	float:    left;
+}
+
+b p a {
+	width:    aWpx;
+	height:   aHpx;
+	position: absolute;
+	bottom:   0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

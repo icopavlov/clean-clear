@@ -1,0 +1,144 @@
+
+/*===================================================================================
+	layout
+====================================================================================*/
+
+ul#main-nav {
+	width:    100%;
+	height:   100px;
+	position: absolute;
+	bottom:   20px;
+//	display:  none;
+}
+
+ul#main-nav ul.sub-navigation {
+	display: none;
+}
+
+/* Бутоните в менюто се застъпват с 2px заради сепараторите
+ */
+ul#main-nav li {
+	width:    202px;
+	height:   100%;
+	position: absolute;
+	left:     50%;
+}
+
+/* Бутоните в менюто се разместват около средата на страницата
+ */
+ul#main-nav li.home {
+	margin-left: -500px;
+}
+
+ul#main-nav li.about {
+	margin-left: -300px;
+}
+
+ul#main-nav li.services {
+	margin-left: -100px;
+}
+
+ul#main-nav li.projects {
+	margin-left: 100px;
+}
+
+ul#main-nav li.contact {
+	margin-left: 300px;
+}
+
+ul#main-nav h3 {
+	height: 100%;
+}
+
+ul#main-nav a {
+	height:  100%;
+	display: block;
+}
+
+/* "Вдлъбнатите" сепаратори в навигацията
+ */
+ul#main-nav a:before, ul#main-nav a:after {
+	content:      "";
+	display:      block;
+	width:        0;
+	height:       100%;
+	position:     absolute;
+	top:          0;
+	border-left:  1px solid;
+	border-right: 1px solid;
+}
+
+ul#main-nav a:before {
+	left: 0;
+}
+
+ul#main-nav a:after {
+	right: 0;
+}
+
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+ul#main-nav a {
+//	font-family:     Candara;
+	font-size:       20px;
+//	font-weight:     bold;
+	line-height:     100px;
+	text-align:      center;
+	text-transform:  uppercase;
+}
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+ul#main-nav a {
+	color: #444;
+}
+
+ul#main-nav a:before, ul#main-nav a:after {
+	border-left-color:  #242424;
+	border-right-color: #121212;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+/* Линкът променя цвета си при mouseover
+ */
+ul#main-nav a:hover, ul#main-nav a.current {
+	color:            #BBB;
+	background-color: #C35F40;
+}
+
+/* Сепараторът променя цвета си и застава над сепаратора, с който се застъпват (покрива го)
+ */
+ul#main-nav a:hover:before, ul#main-nav a.current:before,
+ul#main-nav a:hover:after, ul#main-nav a.current:after {
+	border-color: #181818;
+	z-index:      2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

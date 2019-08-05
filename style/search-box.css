@@ -1,0 +1,97 @@
+
+/*===================================================================================
+	layout
+====================================================================================*/
+
+form#search-box {
+	width:         222px;
+	height:        30px;
+	position:      absolute;
+	right:         50%;
+	margin-right: -500px;
+	top:           55px;
+	border:        1px solid;
+	border-radius: 6px;
+	overflow:      hidden;
+}
+
+form#search-box div.field, form#search-box input {
+	height: 100%;
+}
+
+form#search-box div.field {
+	margin: 0 40px 0 10px;
+}
+
+form#search-box div.field label {
+	display: none;
+}
+
+form#search-box div.field input, form#search-box div.actions input {
+	border: none;
+}
+
+form#search-box div.field input {
+	width: 100%;
+}
+
+form#search-box div.actions input {
+	width:    40px;
+	position: absolute;
+	right:    0;
+	top:      0;
+	cursor:   pointer;
+	opacity:  0.2;
+}
+
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+form#search-box {
+	border-color: #282828;
+}
+
+form#search-box input {
+	color: #444;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+form#search-box input#search-button {
+	background: url( "../images/magnifier.png" ) no-repeat center center;
+}
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+form#search-box input#search-button:hover {
+	opacity: 0.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

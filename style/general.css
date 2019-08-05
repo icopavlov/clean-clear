@@ -1,0 +1,238 @@
+
+/*===================================================================================
+	layout
+====================================================================================*/
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	min-width:  1000px;
+}
+
+div#header {
+	height:   264px;
+	position: relative;
+}
+
+div#identity {
+	margin-bottom: 550px;
+}
+
+div#identity, ul#main-nav, div#content {
+	border-top:    1px solid;
+	border-bottom: 1px solid;
+}
+
+div#content {
+	position: relative;
+	padding:  80px 0 80px 0;
+}
+
+div#content h3 {
+	margin-bottom: 40px;
+}
+
+div#content h4 {
+	margin-bottom: 14px;
+}
+
+/* Нулира се margin-bottom за последния блок в секция
+ */
+div#content > div > ul li.entry:last-child {
+	margin-bottom: 0;
+}
+
+div#content a.more {
+	margin-top: 35px;
+	display:    inline-block;
+}
+
+div#content .entry {
+	position: relative;
+}
+
+/* Всички картинки се позиционират абсолютно спрямо блока
+ */
+div#content .entry  img {
+	position: absolute;
+	left:     0;
+	top:      0;
+}
+
+/* Общите параметри на рамката върху картинките в блоковете
+ */
+div#content .entry p:before, div#info p:before {
+	content:            "";
+	position:           absolute;
+	left:               0;
+	top:                0;
+	z-index:            1;
+	-moz-box-sizing:    border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing:         border-box;
+	border-style:       solid;
+	border-color:       rgba( 255, 255, 255, 0.8 );
+}
+
+div#footer {
+	height:   200px;
+	position: relative;
+}
+
+div#quick-links li,
+div#share,
+div#copyright {
+	width:        310px;
+	height:       64px;
+	padding-top:  4px;
+	position:     absolute;
+	top:          60px;
+	left:         50%;
+	border-left:  1px solid;
+}
+
+div#copyright {
+	margin-left: -500px;
+}
+
+div#quick-links li {
+	margin-left: -190px;
+}
+
+div#share {
+	margin-left: 120px;
+}
+
+div#quick-links li > *,
+div#share > *,
+div#copyright > * {
+	margin: 0 5px 0 30px;
+}
+
+div#quick-links li h4,
+div#share h3,
+div#copyright h3 {
+	margin-bottom: 15px;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+body {
+	line-height: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Impact;
+	line-height: 0.8;
+}
+
+/* Измества се текстът от логото, бутона за търсене и линковете за споделяне
+ */
+div#identity h1,
+form#search-box input#search-button,
+div#share ul.navigation a {
+	text-indent: -10000px;
+}
+
+/* Стилизират се заглавията и линковете в интерфейса
+ */
+div#header h3, div#header h4,
+div#footer h3, div#footer h4 {
+	font-family: Isocpeur;
+}
+
+div#footer h3, div#footer h4 {
+	font-size:      16px;
+	text-transform: uppercase;
+}
+
+div#copyright p a[ rel= "license" ] {
+	text-decoration: underline;
+}
+
+/* Стилизират се заглавията и линковете в съдържанието
+ */
+div#content h3 {
+	font-size: 26px;
+}
+
+div#content h4 {
+	font-size: 16px;
+}
+
+div#content h5 {
+	font-size:      10px;
+	text-transform: uppercase;
+}
+
+div#content a.more {
+	font-weight:     bold;
+	text-decoration: underline;
+}
+
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+body {
+	color:            #333;
+	background-color: #191919;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #444;
+}
+
+div#content h5 {
+	color: inherit;
+}
+
+a:link, a:visited {
+	color: inherit;
+}
+
+div#identity, ul#main-nav, div#content {
+	background-color: #1B1B1B;
+	border-color:     #282828;
+}
+
+div#quick-links li,
+div#share,
+div#copyright {
+	border-color: #222;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+div#content a.more:hover {
+	color: #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

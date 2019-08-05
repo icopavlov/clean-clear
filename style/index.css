@@ -1,0 +1,289 @@
+
+@import url( "reset.css" );
+@import url( "general.css" );
+@import url( "font.css" );
+
+@import url( "identity.css" );
+@import url( "main-navigation.css" );
+@import url( "search-box.css" );
+@import url( "banner.css" );
+@import url( "secondary-navigation.css" );
+@import url( "share.css" );
+@import url( "copyright.css" );
+
+
+/*===================================================================================
+   layout
+====================================================================================*/
+
+/*
+ * general
+ */
+
+div#header {
+	height: 800px;
+}
+
+div#content {
+	padding-bottom: 640px;
+}
+
+div#overview h4 {
+	margin-bottom: 30px;
+}
+
+/*
+ * section positioning
+ */
+
+div#about-entry, div#services-entry, div#news-entry {
+	width:    333px;
+	position: absolute;
+	left:     50%;
+	top:      440px;
+}
+
+div#about-entry {
+	margin-left: -500px;
+}
+
+div#services-entry {
+	margin-left: -167px;
+}
+
+div#news-entry {
+	margin-left: 167px;
+}
+
+/* Разстояние между съдържанията на секциите */
+div#about-entry h3, div#about-entry h5, div#about-entry p,
+div#services-entry h3, div#services-entry ul,
+div#news-entry h3, div#news-entry ul {
+	margin-right: 40px;
+}
+
+/* Разделителната линия между #overview и останалите секции */
+div#content:after {
+	content:       "";
+	width:         100%;
+	position:      absolute;
+	top:           368px;
+	display:       block;
+	border-top:    1px solid;
+	border-bottom: 1px solid;
+}
+
+/*
+ * div#overview
+ */
+
+div#overview h3 {
+	display: none;
+}
+
+div#overview ul {
+	width:    1000px;
+	margin:   0 auto;
+	overflow: hidden;
+}
+
+div#overview li.entry {
+	width:          333px;
+	padding-bottom: 42px;
+	float:          left;
+}
+
+div#overview li.entry h4, div#overview li.entry h5, div#overview li.entry p {
+	margin-left:  68px;
+	margin-right: 32px;
+}
+
+/* Размери на картинките в блоковете и рамката върху тях
+ */
+div#overview li.entry img, div#overview li.entry p:before {
+	width:  50px;
+	height: 45px;
+	top:    54px;
+}
+
+div#overview li.entry p:before {
+	border-width: 4px;
+}
+
+div#overview li.entry a.more {
+	display: block;
+	width:   86px;
+	height:  42px;
+}
+
+/* 
+ * div#about-entry
+ */
+
+div#about-entry.entry {
+	position: absolute;
+}
+
+div#about-entry.entry p {
+	padding-top: 215px;
+}
+
+/* Размери на картинката в блока и рамката върху нея
+ */
+div#about-entry.entry p img, div#about-entry.entry p:before {
+	width:  290px;
+	height: 200px;
+	top:    61px;
+}
+
+div#about-entry.entry p:before {
+	border-width: 8px;
+}
+
+/*
+ * div#services-entry
+ */
+
+div#services-entry li.entry {
+	margin-bottom: 21px;
+}
+
+div#services-entry li.entry h4, div#services-entry li.entry h5, div#services-entry li.entry p {
+	margin-left: 62px;
+}
+
+div#services-entry li.entry h5 {
+	display: none;
+}
+
+/* Размери на картинките в блоковете и рамката върху тях
+ */
+div#services-entry li.entry p img, div#services-entry li.entry p:before {
+	width:  45px;
+	height: 45px;
+}
+
+div#services-entry li.entry p:before {
+	border-width: 3px;
+}
+
+div#services-entry li.entry p a.more {
+	display: none;
+}
+
+/*
+ * div#news-entry
+ */
+
+div#news-entry li.entry {
+	height:        87px;
+	padding-top:   13px;
+	margin-bottom: 25px;
+}
+
+div#news-entry li.entry h4, div#news-entry li.entry h5, div#news-entry li.entry p {
+	margin-left: 100px;
+}
+
+div#news-entry li.entry h5 {
+	position: absolute;
+	top:      1px;
+}
+
+/* Размери на картинките в блоковете и рамката върху тях
+ */
+div#news-entry li.entry p img, div#news-entry li.entry p:before {
+	width:  82px;
+	height: 100px;
+}
+
+div#news-entry li.entry p:before {
+	border-width: 5px;
+}
+
+div#news-entry li.entry p a.more {
+	display: none;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/*
+ * div#overview
+ */
+
+div#overview li.entry h4 {
+	font-size:      26px;
+	text-transform: uppercase;
+}
+
+div#overview li.entry p a.more {
+	font-family:     Impact;
+	font-size:       16px;
+	font-weight:     normal;
+	line-height:     42px;
+	text-transform:  uppercase;
+	text-align:      center;
+	text-decoration: none;
+}
+
+/*
+ * div#about-entry
+ */
+
+/*
+ * div#services-entry
+ */
+
+/*
+ * div#news-entry
+ */
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+/*
+ * div#overview
+ */
+
+div#overview li.entry a.more {
+	color:            #444;
+	background-color: #222;
+}
+
+div#content:after {
+	border-top-color:    #121212;
+	border-bottom-color: #242424;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+div#overview li.entry a.more:hover {
+	color:            #999;
+	background-color: #EEE;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

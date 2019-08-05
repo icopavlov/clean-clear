@@ -1,0 +1,149 @@
+
+/*===================================================================================
+	layout
+====================================================================================*/
+
+div#presentation {
+	width:     100%;
+	position:  absolute;
+	top:      -659px;
+}
+
+div#presentation h3 {
+	display: none;
+}
+
+div#presentation ul#messages {
+	width:  1000px;
+	margin: 0 auto;
+	height: 516px;
+}
+
+div#presentation ul#messages:before {
+//	content:        "";
+	width:          400px;
+	height:         400px;
+	position:       absolute;
+	left:           50%;
+	top:            50%;
+	margin:         -200px 0 0 -200px;
+	border-radius:  200px;
+	background:     #191919;
+}
+
+div#presentation ul#messages li {
+	display: none;
+}
+
+div#presentation ul#message-select {
+	display: none;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+div#presentation {
+	background-color: #C35F40;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+div#presentation ul#messages {
+	background-image:    url( "../images/banner/banner-text.png" ), url( "../images/banner/banner-images.jpg" );
+	background-repeat:   no-repeat, no-repeat;
+	background-position: left top, right bottom;
+}
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+/*===================================================================================
+	animation
+====================================================================================*/
+
+div#presentation ul#messages {
+	-webkit-animation: slide 25s infinite;
+	animation:         slide 25s infinite;
+}
+
+@-webkit-keyframes slide {
+	0% {
+		background-position: left top, right bottom;
+	}
+	22% {
+		background-position: left top, right bottom;
+	}
+	25% {
+		background-position: left -516px, right -1032px;
+	}
+	47% {
+		background-position: left -516px, right -1032px;
+	}
+	50% {
+		background-position: left -1032px, right -516px;
+	}
+	72% {
+		background-position: left -1032px, right -516px;
+	}
+	75% {
+		background-position: left -1548px, right top;
+	}
+	97% {
+		background-position: left -1548px, right top;
+	}
+	100% {
+		background-position: left top, right bottom;
+	}
+}
+
+@keyframes slide {
+	0% {
+		background-position: left top, right bottom;
+	}
+	22% {
+		background-position: left top, right bottom;
+	}
+	25% {
+		background-position: left -516px, right -1032px;
+	}
+	47% {
+		background-position: left -516px, right -1032px;
+	}
+	50% {
+		background-position: left -1032px, right -516px;
+	}
+	72% {
+		background-position: left -1032px, right -516px;
+	}
+	75% {
+		background-position: left -1548px, right top;
+	}
+	97% {
+		background-position: left -1548px, right top;
+	}
+	100% {
+		background-position: left top, right bottom;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

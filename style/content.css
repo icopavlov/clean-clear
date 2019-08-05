@@ -1,0 +1,332 @@
+
+/*===================================================================================
+   layout
+====================================================================================*/
+
+/* general
+====================================================================================*/
+
+div#content {
+	position: relative;
+	padding:  80px 0 580px 0;
+//	overflow: hidden;
+}
+
+/* Разделителната линия между #overview и останалите секции */
+div#content:after {
+	content:       "";
+	width:         100%;
+	position:      absolute;
+	top:           330px;
+	display:       block;
+	border-top:    1px solid #090909;
+	border-bottom: 1px solid #242424;
+}
+
+/* Ширини и разполагане на секциите */
+div#about-entry, div#services-entry, div#news-entry {
+	width:    333px;
+	position: absolute;
+	left:     50%;
+	top:      400px;
+}
+
+div#about-entry {
+	margin-left: -500px;
+}
+
+div#services-entry {
+	margin-left: -167px;
+}
+
+div#news-entry {
+	margin-left: 167px;
+}
+
+
+/* Разстояние между съдържанията на секциите */
+div#about-entry h3, div#about-entry h5, div#about-entry p,
+div#services-entry h3, div#services-entry ul,
+div#news-entry h3, div#news-entry ul {
+	margin-right: 40px;
+}
+
+/* Всички картинки се позиционират абсолютно спрямо блока */
+div#content .entry  img {
+	position: absolute;
+	left:     0;
+	top:      0;
+}
+
+/* Линковете "more" се оформят като бутони
+и се позиционират спрямо блока */
+div#content a.more {
+	width:    90px;
+	height:   40px;
+	position: absolute;
+	bottom:   0;
+	display:  block;
+}
+
+/* div#overview
+====================================================================================*/
+
+div#overview h3 {
+	display: none;
+}
+
+div#overview ul {
+	width:    1000px;
+	margin:   0 auto;
+	overflow: hidden;
+}
+
+div#overview li.entry {
+	width:    333px;
+	position: relative;
+	padding:  0 0 65px 0;
+	float:    left;
+}
+
+div#overview li.entry:last-child {
+	display: none;
+}
+
+div#overview li.entry h4, div#overview li.entry h5, div#overview li.entry p {
+	margin-left:  50px;
+	margin-right: 40px;
+}
+
+div#overview li.entry h4 {
+	margin-bottom: 20px;
+}
+
+div#overview li.entry h5 {
+	display: none;
+}
+
+div#overview li.entry p {
+	height:   74px;
+	overflow: hidden;
+}
+
+div#overview li.entry img {
+	width:  35px;
+	height: 35px;
+}
+
+/* div#about-entry
+====================================================================================*/
+
+div#about-entry {
+	padding: 0 0 40px 0;
+}
+
+div#about-entry h3 {
+	margin-bottom: 20px;
+}
+
+div#about-entry h5 {
+	display: none;
+}
+
+div#about-entry p {
+	height:        251px;
+	margin-bottom: 20px;
+	overflow:      hidden;
+}
+
+div#about-entry p img {
+	width:         100%;
+	height:        120px;
+	margin-bottom: 10px;
+	float:         left;
+}
+
+/* div#services-entry
+====================================================================================*/
+
+div#services-entry {
+	padding: 0 0 50px 0;
+}
+
+div#services-entry h3 {
+	margin-bottom: 20px;
+}
+
+div#services-entry li.entry {
+	position:      relative;
+	margin-bottom: 10px;
+}
+
+div#services-entry li.entry h4, div#services-entry li.entry h5, div#services-entry li.entry p {
+	margin-left: 50px;
+}
+
+div#services-entry li.entry h4 {
+	margin-bottom: 10px;
+}
+
+div#services-entry li.entry h5 {
+	display: none;
+}
+
+div#services-entry li.entry p {
+	height:   37px;
+	overflow: hidden;
+}
+
+div#services-entry li.entry p img {
+	width:  35px;
+	height: 40px;
+}
+
+div#services-entry li.entry p a.more {
+	display: none;
+}
+
+/* div#news-entry
+====================================================================================*/
+
+div#news-entry {
+	padding: 0 0 50px 0;
+}
+
+div#news-entry h3 {
+	margin-bottom: 20px;
+}
+
+div#news-entry li.entry {
+	position:      relative;
+	padding:       12px 0 0 0;
+	margin-bottom: 20px;
+}
+
+div#news-entry li.entry:last-child {
+	display: none;
+}
+
+div#news-entry li.entry h4, div#news-entry li.entry h5, div#news-entry li.entry p {
+	margin-left: 90px;
+}
+
+div#news-entry li.entry h4 {
+	margin-bottom: 10px;
+}
+
+div#news-entry li.entry h5 {
+	position: absolute;
+	top:      0;
+}
+
+div#news-entry li.entry p {
+	height:   37px;
+	overflow: hidden;
+}
+
+div#news-entry li.entry p img {
+	width:  70px;
+	height: 70px;
+}
+
+div#news-entry li.entry p a.more {
+	display: none;
+}
+
+/*===================================================================================
+	typography
+====================================================================================*/
+
+/* div#overview
+====================================================================================*/
+
+div#overview li.entry h4 {
+	font-size:      20px;
+	text-transform: uppercase;
+}
+
+div#overview li.entry a {
+	text-indent: -10000px;
+}
+
+/* div#about-entry
+====================================================================================*/
+
+div#about-entry a {
+	text-indent: -10000px;
+}
+
+/* div#services-entry
+====================================================================================*/
+
+/* div#news-entry
+====================================================================================*/
+
+/*===================================================================================
+	color
+====================================================================================*/
+
+/* div#overview
+====================================================================================*/
+
+div#overview {
+//	background-color: #444;
+}
+
+div#overview li.entry img {
+	background-color: #444;
+}
+
+div#overview li.entry a {
+	background-color: #222;
+}
+
+/* div#about-entry
+====================================================================================*/
+
+div#about-entry a {
+	background-color: #222;
+}
+
+/* div#services-entry
+====================================================================================*/
+
+/* div#news-entry
+====================================================================================*/
+
+div#content:after {
+	border-top-color:    #090909;
+	border-bottom-color: #242424;
+}
+
+/*===================================================================================
+	imagery
+====================================================================================*/
+
+/*===================================================================================
+	interactivity
+====================================================================================*/
+
+/* div#overview
+====================================================================================*/
+
+div#overview li.entry a:hover {
+	background-color: #940;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
